@@ -9,7 +9,6 @@ import javax.swing.*;
 import java.sql.*;
 public class Inicio_Sesion {
     public String Iniciar(String correo,String pass){
-        Registrar_Usuario registro = new Registrar_Usuario();
         Conexion conex = new Conexion();
         String Cap="";
         String Cad="select * from registro where correo='"+correo+"' && contraseña='"+pass+"'";
